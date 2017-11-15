@@ -2,7 +2,7 @@
     "appName":"Batterie-Prozentsatz",
     "Sensor":"Sensor für Kapazität",
     "VSensor":"Sensor für Spannung",
-    "nCell":"Anhahl Lipozellen",
+    "nCell":"Anzahl Lipozellen",
     "vLimit":"Spannungslimit pro Zelle",
 	"capInc":"Zählwert Kapazität",
     "Settings1":"Batterie Einstellungen ",
