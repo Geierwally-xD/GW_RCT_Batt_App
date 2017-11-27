@@ -56,7 +56,7 @@ local tSet1 = 0
 local anTime = 0,0,0,0
 local akku = 1 
 local capIncrease = 100
-local battVersion = "GW2.3.4"
+local battVersion = nil
 local tStr0 = 0
 local tStr1 = 0
 local prevVoltage = 0
@@ -100,7 +100,7 @@ local function printTelem()
 		lcd.drawRectangle(5,9,26,55)
 		lcd.drawFilledRectangle(12,6,12,4)
 		lcd.drawText(145 - lcd.getTextWidth(FONT_MAXI,"-%"),10,"-%",FONT_MAXI)
-		lcd.drawText(145 - lcd.getTextWidth(FONT_MINI,"GW RC-Thoughts"),54,"GW RC-Thoughts",FONT_MINI)
+		lcd.drawText(145 - lcd.getTextWidth(FONT_MINI,"Geierwally"),54,"Geierwally",FONT_MINI)
 	else
 		lcd.drawRectangle(5,9,26,55) 
 		lcd.drawFilledRectangle(12,6,12,4)
@@ -139,8 +139,7 @@ local function printTelem()
 			lcd.drawText(145 - lcd.getTextWidth(FONT_MAXI,string.format("%s%%",telVal)),10,string.format("%s%%",telVal),FONT_MAXI) 	
 		end	
 		------only for simulation without connected telemetry
-		--lcd.drawText(145 - lcd.getTextWidth(FONT_MINI,"RC-Thoughts.com"),53,"CellVoltage "..telVoltageVal,FONT_MINI)
-		lcd.drawText(145 - lcd.getTextWidth(FONT_MINI,"GW RC-Thoughts"),53,"GW RC-Thoughts",FONT_MINI)
+		lcd.drawText(145 - lcd.getTextWidth(FONT_MINI,"Geierwally"),53,"Geierwally",FONT_MINI)
 	end
 end
 --------------------------------------------------------------------------------
@@ -256,7 +255,7 @@ local function initForm(subform)
 		form.setButton(2,trans.btn2..akku,ENABLED)
 		
 		form.addRow(1)
-		form.addLabel({label="--- GW based on RC-Thoughts  ---",font=FONT_BOLD})
+		form.addLabel({label="--- Geierwally  ---",font=FONT_BOLD})
 		
 		form.addRow(1)
 		form.addLabel({label=trans.Label,font=FONT_BOLD})
@@ -302,7 +301,7 @@ local function initForm(subform)
 		form.addInputbox(anSw,true,anSwChanged)
 		
 		form.addRow(1)
-		form.addLabel({label="Powered by GW based on RC-Thoughts - "..battVersion.." ",font=FONT_MINI, alignRight=true})
+		form.addLabel({label="Powered by Geierwally - "..battVersion.." ",font=FONT_MINI, alignRight=true})
 		
 		form.setFocusedRow (1)
 		formID = 1
@@ -313,7 +312,7 @@ local function initForm(subform)
 			form.setButton(2,trans.btn2..akku,HIGHLIGHTED)
 			
 			form.addRow(1)
-			form.addLabel({label="--- GW based on RC-Thoughts ---",font=FONT_BOLD})
+			form.addLabel({label="--- Geierwally ---",font=FONT_BOLD})
 			
 			form.addRow(1)
 			form.addLabel({label=trans.Settings1..akku,font=FONT_BOLD})
@@ -350,7 +349,7 @@ local function initForm(subform)
 			form.addIntbox(alarm3[akku],0,100,0,0,1,alarm3Changed)
 			
 			form.addRow(1)
-			form.addLabel({label="Powered by GW based on RC-Thoughts - "..battVersion.." ",font=FONT_MINI, alignRight=true})
+			form.addLabel({label="Powered by Geierwally - "..battVersion.." ",font=FONT_MINI, alignRight=true})
 			
 			form.setFocusedRow (1)
 			formID = 2
@@ -609,7 +608,8 @@ local function loop()
 end
 --------------------------------------------------------------------------------
 -- Application initialization
-local function init()
+local function init(battVersion_)
+	battVersion = battVersion_
 	capAlarm = false
 	voltageAlarm = false
 	telVal = "-"

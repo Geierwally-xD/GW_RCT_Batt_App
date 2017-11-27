@@ -41,6 +41,7 @@ local main_lib = nil  -- lua main script
 local initDelay = 0
 local mem = 0
 local debugmem = 0
+local battVersion = "GW2.3.4"
 
 -------------------------------------------------------------------- 
 -- Initialization
@@ -51,7 +52,7 @@ local function init(code)
 	end	
 	if(main_lib ~= nil) then
 		local func = main_lib[1]
-		func(0) --init(0)
+		func(battVersion) --init(0)
 	end
 end
 
@@ -90,4 +91,4 @@ local function loop()
 end
  
 --------------------------------------------------------------------
-return { init=init, loop=loop, author="GW RC-Thoughts", version="V234", name="Battery Percentage"}
+return { init=init, loop=loop, author="Geierwally", version=battVersion, name="Battery Percentage"}
