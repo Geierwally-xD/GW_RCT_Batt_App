@@ -1,0 +1,29 @@
+{
+"Battery Checker": {
+    "author": "Geierwally",
+    "version": "GW2.3.4",
+    "previewImg": "https://raw.githubusercontent.com/Geierwally-xD/GW_RCT_Batt_App/master/img/Geierwally.jpg",
+    "description": "https://raw.githubusercontent.com/Geierwally-xD/GW_RCT_Batt_App/master/README.md",
+    "sourceFile": [
+      "https://raw.githubusercontent.com/Geierwally-xD/GW_RCT_Batt_App/master/GW_BATT/Apps/GW_Batt.lc",
+      "https://raw.githubusercontent.com/Geierwally-xD/GW_RCT_Batt_App/master/GW_BATT/Apps/GW_BATT/Task/GW_Batt_Main.lua",
+      "https://raw.githubusercontent.com/Geierwally-xD/GW_RCT_Batt_App/master/GW_BATT/Apps/GW_BATT/lang/cz/locale.jsn",
+      "https://raw.githubusercontent.com/Geierwally-xD/GW_RCT_Batt_App/master/GW_BATT/Apps/GW_BATT/lang/de/locale.jsn",
+      "https://raw.githubusercontent.com/Geierwally-xD/GW_RCT_Batt_App/master/GW_BATT/Apps/GW_BATT/lang/en/locale.jsn",
+      "https://raw.githubusercontent.com/Geierwally-xD/GW_RCT_Batt_App/master/GW_BATT/Apps/GW_BATT/lang/es/locale.jsn",
+      "https://raw.githubusercontent.com/Geierwally-xD/GW_RCT_Batt_App/master/GW_BATT/Apps/GW_BATT/lang/fr/locale.jsn",
+      "https://raw.githubusercontent.com/Geierwally-xD/GW_RCT_Batt_App/master/GW_BATT/Apps/GW_BATT/lang/it/locale.jsn",
+    ],
+    "destinationPath": [
+      "/Apps",
+      "/Apps/GW_BATT/Task",		  
+      "/Apps/GW_BATT/lang/cz",		  
+      "/Apps/GW_BATT/lang/de",		  
+      "/Apps/GW_BATT/lang/en",		  
+      "/Apps/GW_BATT/lang/es",		  
+      "/Apps/GW_BATT/lang/fr",		  
+      "/Apps/GW_BATT/lang/it"		  
+	 ]
+	}
+}
+ 
