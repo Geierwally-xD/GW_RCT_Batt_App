@@ -12,8 +12,8 @@
       "https://raw.githubusercontent.com/Geierwally-xD/GW_RCT_Batt_App/master/GW_BATT/Apps/GW_BATT/lang/en/locale.jsn",
       "https://raw.githubusercontent.com/Geierwally-xD/GW_RCT_Batt_App/master/GW_BATT/Apps/GW_BATT/lang/es/locale.jsn",
       "https://raw.githubusercontent.com/Geierwally-xD/GW_RCT_Batt_App/master/GW_BATT/Apps/GW_BATT/lang/fr/locale.jsn",
-      "https://raw.githubusercontent.com/Geierwally-xD/GW_RCT_Batt_App/master/GW_BATT/Apps/GW_BATT/lang/it/locale.jsn",
-    ],
+      "https://raw.githubusercontent.com/Geierwally-xD/GW_RCT_Batt_App/master/GW_BATT/Apps/GW_BATT/lang/it/locale.jsn"
+    ]
     "destinationPath": [
       "/Apps",
       "/Apps/GW_BATT/Task",		  
