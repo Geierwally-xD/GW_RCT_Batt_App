@@ -33,6 +33,8 @@
 	5 bugfix storage lack on 14 and 16 transmitters
 	6 3 capacity alerts and 1 voltage alert configurable
 	---------------------------------------------------------
+	GW 2.3.5: Support of 12 and 16 G-2 Transmitters
+	---------------------------------------------------------
 --]]
 --Configuration
 --Local variables
@@ -41,7 +43,7 @@ local main_lib = nil  -- lua main script
 local initDelay = 0
 local mem = 0
 local debugmem = 0
-local battVersion = "GW2.3.4"
+local battVersion = "GW2.3.5"
 
 -------------------------------------------------------------------- 
 -- Initialization

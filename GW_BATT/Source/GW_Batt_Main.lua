@@ -33,6 +33,9 @@
 	5 bugfix storage lack on 14 and 16 transmitters
 	6 3 capacity alerts and 1 voltage alert configurable
 	---------------------------------------------------------
+	GW 2.3.5: Support of 12 and 16 G-2 Transmitters
+	---------------------------------------------------------
+	
 --]]
 
 --------------------------------------------------------------------------------
@@ -644,7 +647,7 @@ local function init(battVersion_)
 	system.registerControl(3,trans.battCtrl,trans.battSw)
 	system.registerForm(1,MENU_APPS,trans.appName,initForm,keyPressed)
 	local deviceType = system.getDeviceType()
-	if(( deviceType == "JETI DC-24")or(deviceTypeF3K == "JETI DS-24"))then
+    if(( deviceType == "JETI DC-24")or(deviceTypeF3K == "JETI DS-24")or(deviceTypeF3K == "JETI DS-12")or(deviceTypeF3K == "JETI DC-16 II")or(deviceTypeF3K == "JETI DS-16 II"))then
 		colorScreen = true -- set display type
 	end
 end

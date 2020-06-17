@@ -1,4 +1,4 @@
-@REM Installation of RCT-Batt App V2.34 on Jeti Transmitters
+@REM Installation of RCT-Batt App V2.3.5 on Jeti Transmitters
 @echo off
 @echo ================================
 @echo connection  transmitter
